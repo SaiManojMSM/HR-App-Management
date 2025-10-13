@@ -20,7 +20,7 @@ spec:
             - containerPort: 3000
           env:
             - name: MONGODB_URI
-              value: "mongodb://rootuser:rootpassword@localhost:27017/hr_system?authSource=rootuser"
+              value: "production"
             - name: PORT
               value: "5000"
             - name: HOST
