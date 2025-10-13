@@ -18,14 +18,6 @@ spec:
           image: saimanoj143/cap-hrr-app:v1.1.0
           ports:
             - containerPort: 3000
-          env:
-        - name: NODE_ENV
-          value: "production"
-        - name: MONGO_URI
-          valueFrom:
-            secretKeyRef:
-              name: hr-app-secrets
-              key: mongo-uri
 ---
 apiVersion: v1
 kind: Service
