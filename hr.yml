@@ -18,6 +18,15 @@ spec:
           image: saimanoj143/cap-hrr-app:v1.1.0
           ports:
             - containerPort: 3000
+          env:
+            - name: MONGODB_URI
+              value: "mongodb://rootuser:rootpassword@localhost:27017/hr_system?authSource=rootuser"
+            - name: PORT
+              value: "5000"
+            - name: HOST
+              value: "0.0.0.0"
+            - name: NODE_ENV
+              value: "production" 
 ---
 apiVersion: v1
 kind: Service
